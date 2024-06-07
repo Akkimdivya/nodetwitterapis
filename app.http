@@ -1,0 +1,59 @@
+POST http://localhost:3000/register/
+Content-Type: application/json
+
+{
+  "username": "akkim_divya",
+  "password": "Divya@1234",
+  "name": "Divya",
+  "gender": "female"
+}
+
+###
+
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+  "username":"akkim_divya",
+  "password":"Divya@1234"
+}
+
+GET http://localhost:3000/users/
+
+###
+
+DELETE http://localhost:3000/user/5/
+
+###
+PUT http://localhost:3000/user/2/
+Content-Type: application/json
+
+{
+  "name": "Divi",
+  "username": "divya",
+  "password": "Divi@1234",
+  "gender": "female"
+}
+
+###
+POST http://localhost:3000/user/4/
+Content-Type: application/json
+
+{
+  "name": "nishu",
+  "username": "akkim",
+  "password": "nishu@1234",
+  "gender": "male"
+}
+
+###
+GET http://localhost:3000/user/tweets/feed/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo4LCJuYW1lIjoiRGl2eWEiLCJ1c2VybmFtZSI6ImFra2ltX2RpdnlhIiwicGFzc3dvcmQiOiIkMmIkMTAkV2NaNTFRd2lNQUlXaEN2L3FDSU5PLlY5eWJSUXc1VnZXd3k3MWNjZFFNcEg3TWVFSXJiZE8iLCJnZW5kZXIiOiJmZW1hbGUiLCJpYXQiOjE3MDE5Mzg4NzF9.7g6q7oqEWcvPt72M2XQjKKItdf1B_P9luFwmi2x75j8
+
+###
+
+GET http://localhost:3000/user/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo4LCJuYW1lIjoiRGl2eWEiLCJ1c2VybmFtZSI6ImFra2ltX2RpdnlhIiwicGFzc3dvcmQiOiIkMmIkMTAkV2NaNTFRd2lNQUlXaEN2L3FDSU5PLlY5eWJSUXc1VnZXd3k3MWNjZFFNcEg3TWVFSXJiZE8iLCJnZW5kZXIiOiJmZW1hbGUiLCJpYXQiOjE3MDE5Mzg4NzF9.7g6q7oqEWcvPt72M2XQjKKItdf1B_P9luFwmi2x75j8
+
+###
+GET http://localhost:3000/books/?offset=2&limit=3
